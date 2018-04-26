@@ -1,7 +1,7 @@
 module.exports = {
     friends: [{
-            "name": "Billy",
-            "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+            "name": "Miley",
+            "photo": "https://assets.capitalfm.com/2013/34/miley-cyrus-1377702236-view-0.jpg",
             "scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         },
         {
@@ -16,26 +16,26 @@ module.exports = {
         },
         {
             "name": "Cloud",
-            "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+            "photo": "http://dissidia.info/wp-content/uploads/158-p1HbdKiPwS.jpg",
             "scores": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
         },
         {
             "name": "Frodo",
-            "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+            "photo": "https://i.ytimg.com/vi/igm3ywHLy5w/maxresdefault.jpg",
             "scores": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
         },
         {
             "name": "Ash",
-            "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+            "photo": "https://cdn.drawception.com/images/panels/2013/4-27/TBSbtShnWm-4.png",
             "scores": [6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
         },
         {
-            "name": "Duke",
-            "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+            "name": "Rick",
+            "photo": "https://vignette.wikia.nocookie.net/rickandmorty/images/a/a6/Rick_Sanchez.png/revision/latest?cb=20160923150728",
             "scores": [7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
         },
         {
-            "name": "Barry Badernath",
+            "name": "Barry",
             "photo": "https://static1.squarespace.com/static/54b854c9e4b089bfadc9b5e2/54d3c195e4b028e7b23f3d18/54d3c1c8e4b04682afead9f9/1423163854573/06---Who-is-Barry-Badrinath-.jpg",
             "scores": [8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
         },

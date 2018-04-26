@@ -2,146 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
-        crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/modal.css">
+
+  <title>Document</title>
 </head>
 
 <body>
-    <div class="jumbotron">
+  <div class="jumbotron">
 
-        <h1 class="display-4">Survey Questions</h1>
-        <hr class="my-4">
+    <h1 class="display-4">Survey Questions</h1>
+    <hr class="my-4">
 
-        <form action="./api/matches" method="post">
-            <div>
-                <label for="name">Enter your Name</label>
-                <input id="name" type="text" name="name">
-            </div>
-
-
-
-            <div class="custom-file">
-                <label class="btn btn-primary btn-md">
-                    Upload your Image
-                    <input type="file" style="display:none">
-                </label>
-            </div>
-            <hr class="my-4">
-
-            <div>
-                <label for="q1">Are you an outdoors person?</label>
-                <select class="questions" id="q1">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-
-
-                <label for="q2">Are you spontaneous? </label>
-                <select name="questions" id="q2">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-
-
-                <label for="q3">Are you more of a homebody? </label>
-                <select name="questions" id="q3">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-
-
-                <label for="q4">Do you like morning over evenings? </label>
-                <select name="questions" id="q4">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-
-
-                <label for="q5">Do you consider yourself a kind person? </label>
-                <select name="questions" id="q5">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-                <label for="q6">Are you social? </label>
-                <select name="questions" id="q6">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-                <label for="q7">Do you like to travel? </label>
-                <select name="questions" id="q7">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-                <label for="q8">Do you prefer to sleep in on weekends? </label>
-                <select name="questions" id="q8">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-                <label for="q9">Are you above average? </label>
-                <select name="questions" id="q9">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-                <br>
-                <label for="q10">Do you like to be in control? </label>
-                <select name="questions" id="q10">
-                    <option value="1">Strongly agree</option>
-                    <option value="2">Agree</option>
-                    <option value="3">Neutral</option>
-                    <option value="4">Disagree</option>
-                    <option value="5">Strongly Disagree</option>
-                </select>
-            </div>
-            <button class="btn btn-primary btn-lg" type="submit" role="button">submit</button>
-            <!-- <button type="submit">submit</button> -->
-
-
-        </form>
-        <hr class="my-4">
-        <a href="./">back to home page</a>
+    <form>
+      <div>
+        <label for="name">Enter your Name</label>
+        <input id="name" type="text" name="name">
+      </div>
 
 
 
-    </div>
+      <div class="custom-file">
+        <label class="btn btn-primary btn-md">
+          Upload your Image
+          <input type="file" style="display:none">
+        </label>
+      </div>
+      <hr class="my-4">
+
+      <div>
+        <label for="q1">Are you an outdoors person?</label>
+        <select name="q1" id="q1">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+
+
+        <label for="q2">Are you spontaneous? </label>
+        <select name="q2" id="q2">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+
+
+        <label for="q3">Are you more of a homebody? </label>
+        <select name="q3" id="q3">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+
+
+        <label for="q4">Do you like morning over evenings? </label>
+        <select name="q4" id="q4">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+
+
+        <label for="q5">Do you consider yourself a kind person? </label>
+        <select name="q5" id="q5">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+        <label for="q6">Are you social? </label>
+        <select name="q6" id="q6">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+        <label for="q7">Do you like to travel? </label>
+        <select name="q7" id="q7">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+        <label for="q8">Do you prefer to sleep in on weekends? </label>
+        <select name="q8" id="q8">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+        <label for="q9">Are you above average? </label>
+        <select name="q9" id="q9">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+        <br>
+        <label for="q10">Do you like to be in control? </label>
+        <select name="q10" id="q10">
+          <option value="1">Strongly agree</option>
+          <option value="2">Agree</option>
+          <option value="3">Neutral</option>
+          <option value="4">Disagree</option>
+          <option value="5">Strongly Disagree</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-lg" id="surveySubmit" type="submit" role="button">submit</button>
+      <!-- <button type="submit">submit</button> -->
+
+
+    </form>
+    <hr class="my-4">
+    <a href="./">back to home page</a>
+
+
+
+  </div>
+  <div id="modalWindow" class="hide">
+    <div id="match"></div>
+
+
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/client.js"></script>
 </body>
 
 </html>
